@@ -1,0 +1,367 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+          font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+        .navbar img {
+            max-width: 150px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #015ca1;
+            padding: 15px;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #2f2292;
+        }
+
+        .navbar .icon i {
+            color: #015ca1;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 50%;
+            transition: 0.2s ease-in-out;
+        }
+
+        .navbar .icon i:hover {
+            background-color: #015CA1;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 20px;
+            transition: 0.2s ease-in-out;
+        }
+
+        /* Custimze-Navbar nav */
+
+        .navbar-light .navbar-toggler-icon {
+            background-image: url(https://static-mh.content.disney.io/matterhorn/assets/avatar/burger_dark-a11f5a917f0a.svg);
+        }
+
+        .navbar-light .navbar-toggler {
+            border: 0;
+        }
+
+
+        .hero_section {
+            min-height: 560px;
+            background-image: url("https://lumiere-a.akamaihd.net/v1/images/hb_avatar_frontiersofpandora_2059_09229ef8.jpeg?region=0,0,2048,878");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-top: 76px;
+        }
+
+        .content-body img {
+            width: 450px;
+            padding-top: 250px;
+        }
+
+
+
+        .hero_section .btn {
+            border: 1px solid #38E1F4;
+            background-color: rgba(36, 59, 83, 0.8);
+            border-radius: 20px 0px 20px 0px;
+            margin: 0 24px 24px 0;
+            border-width: 2px;
+            color: #38E1F4;
+            min-width: 240px;
+            height: 42px;
+            font-weight: 800;
+            line-height: 1.5rem;
+            padding: 30px;
+            padding-top: 7px;
+            transition: all .3s ease-in-out;
+        }
+
+        .hero_section .btn:hover {
+            background-color: whitesmoke;
+            color: rgb(18, 18, 58);
+            border-color: white;
+        }
+
+        @media(max-width:768px) {
+            .hero_section {
+                background-size: cover;
+                background-position: center;
+            }
+
+            .content-body img {
+                width: 250px;
+                padding-top: 260px;
+            }
+
+            .hero_section .btn {
+                margin: 0px -7px 23px -9px;
+            }
+
+        }
+
+
+
+        .second-section .second-content blockquote {
+            color: #243b53;
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 0;
+            font-family: toruk, proximanova, Matterhorn, Helvetica, sans-serif;
+        }
+
+        .second-section .second-content p {
+            color: #243b53;
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 0;
+            margin-top: 0px;
+        }
+
+
+        .image-box {
+            position: relative;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 2px;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #fff;
+            opacity: 0;
+            padding: 5px;
+            background: transparent;
+            width: 100%;
+            transition: opacity 0.5s ease;
+            opacity: 1;
+            padding: 7px;
+            text-align: start;
+        }
+
+        .overlay p {
+            color: inherit;
+            margin: 0;
+            line-height: inherit;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .image-box:hover {
+            opacity: 1;
+        }
+
+        .overlay h3 {
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .bg-section {
+            background-image: url(https://lumiere-a.akamaihd.net/v1/images/background_sunset_desktop_becce738.jpeg?region=0,0,1440,673);
+            min-height: 550px;
+            background-size: 100%;
+            border: 2px solid red;
+            position: relative;
+
+        }
+
+        .card {
+            min-height: 350px;
+            color: #243B53;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            transition: transform 0.5s ease;
+            object-fit: cover;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+
+        }
+
+        .slider-card .l-news p {
+            color: #243b53;
+            text-transform: uppercase;
+            font-size: 27px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+
+        }
+
+
+        .slider-card .l-news::after {
+            content: "";
+            display: block;
+            height: 3px;
+            position: relative;
+            background-image: url(https://static-mh.content.disney.io/matterhorn/assets/avatar/header-underline-1600-d2d5bd2e2476.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
+
+        .slider-card .card-body span {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .slider-card .card-body h3 {
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+
+        .email-image {
+            /* max-width: 1800px; */
+            background-repeat: no-repeat;
+            background-image: url(https://lumiere-a.akamaihd.net/v1/images/avatar-email-list_m_e7f683c5.jpeg?region=0,0,750,1000);
+            background-size: 100%;
+            margin-top: 70px;
+        }
+
+        .email-image h1 {
+            padding: 0.5rem;
+            padding-left: 40px;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .email-image p {
+            padding-left: 40px;
+            color: white;
+        }
+
+        .email-image button {
+            border: 1px solid #38E1F4;
+            background-color: rgba(36, 59, 83, 0.8);
+            border-radius: 20px 0px 20px 0px;
+            border-width: 2px;
+            color: #38E1F4;
+            min-width: 216px;
+            height: 42px;
+            font-weight: 800;
+            line-height: 1.5rem;
+            padding: 30px;
+            padding-top: 7px;
+            margin-bottom: 50px;
+            margin-left: 37px;
+            text-transform: uppercase;
+            transition: 0.3s ease-in;
+
+        }
+
+        .email-image button:hover {
+            background-color: whitesmoke;
+            color: rgb(18, 18, 58);
+            border-color: white;
+            transition: 0.3s ease-in;
+        }
+
+        .footer-bg {
+            padding-top: 50px;
+        }
+
+        .footer-bg img {
+            width: 100%;
+        }
+
+        .footer-bg2 {
+            background-image: url(https://lumiere-a.akamaihd.net/v1/images/avatarfooter_768_b7706909.jpeg?region=0%2C0%2C768%2C292);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .footer-content {
+            padding-top: 100px;
+        }
+
+        .footer-content img {
+            display: block;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .footer-content h1 {
+            text-align: center;
+        }
+
+        .footer-content .icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-content .icons i:hover {
+            background-color: rgb(68, 68, 148);
+        }
+
+        .footer-content p {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-content .icons i {
+            background-color: #015CA1;
+            font-size: 18px;
+            padding: 10px;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .unorder-list {
+            text-align: center;
+        }
+
+
+        .unorder-list ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 20px;
+            display: inline-block;
+
+        }
+
+        .unorder-list li {
+            display: inline-block;
+            margin: 10px;
+            font-size: 13px;
+            font-weight: 600;
+
+        }
+
+        .footer-bg {
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
